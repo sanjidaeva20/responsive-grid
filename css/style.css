@@ -108,11 +108,12 @@ footer{
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 
-nav a:hover, a:focus{
+nav a:hover, a:focus {
   text-decoration: underline;
 }
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+
 .skip a {
   position: absolute;
   top: -40px;
@@ -144,7 +145,7 @@ img{
 first div in the grid  and place it in the grid. */
 
 .container div:first-child{
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   min-height: 500px;
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
@@ -214,6 +215,10 @@ first div in the grid  and place it in the grid. */
   }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+  .about, .clients, .method-image, .contact-image {
+    grid-column: 3 / 5;
+  }
+
   .method, .contact, .about-image, .clients-image{
     grid-column: 2/4;
   }

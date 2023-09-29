@@ -109,7 +109,7 @@ footer{
 links in the navigation are in the hover or focus state.*/
 
 nav a:hover, a:focus{
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 
@@ -134,7 +134,7 @@ nav a:hover, a:focus{
 /* Step 4: Write selector/rule property to style the container */
 .container {
   display: grid;
-  grid-template-columns: 1ft 5fr 1fr
+  grid-template-columns: 1ft 5fr 1fr;
   grid-gap: 15px
 }
 
@@ -203,9 +203,6 @@ first div in the grid  and place it in the grid. */
 
 /* Add your media query here */
 @media screen and (min-width: 800px){
-  
-
-
   /* Step 9: Write the selector/rule property to style the nav element */
 
   nav{
@@ -213,13 +210,13 @@ first div in the grid  and place it in the grid. */
     padding: 30px 0px;
   }
   /* Step 10: Write the selector/rule property to update the .container class */
-.container{
-  display: grid;
-  grid-template-columns: 50px auto 500px auto 50px;
-}
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+  }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
-.method, .contact, .about-image, .clients-image{
-  grid-column: 2/4;
-}
+  .method, .contact, .about-image, .clients-image{
+    grid-column: 2/4;
+  }
 }

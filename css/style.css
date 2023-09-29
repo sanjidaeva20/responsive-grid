@@ -112,13 +112,11 @@ nav a:hover, a:focus{
   text-decoration: underline;
 }
 
-
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a {
   position: absolute;
   top: -40px;
 }
-
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus {
@@ -134,8 +132,8 @@ nav a:hover, a:focus{
 /* Step 4: Write selector/rule property to style the container */
 .container {
   display: grid;
-  grid-template-columns: 1ft 5fr 1fr;
-  grid-gap: 15px
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-gap: 15px;
 }
 
 img{
